@@ -1,0 +1,75 @@
+<html>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.css">
+<link rel="stylesheet" href="./css/style.css">
+
+<body>
+
+	<div id="chatbot">
+		<div id="description" class="sr-hidden">This is the chatbot conversation window, all conversations are shown in here</div>
+
+		<div id="text-container">
+			<div id="conversation-text-body" aria-labelledby="description" aria-live="polite">
+				<div tabindex="0" aria-label="The bot said" class="conversation-text bot">Hello, how are you?</div>		
+			</div>
+		</div>
+	</div>
+
+	<div class="control-container">
+
+		<form id="chatbot-form" class="form-inline">
+			<label for="user-msg">Ask me a question</label>
+			<input type="text" autocomplete="off" id="user-msg" class="form-control">
+			<button id="send" type="button" class="button large">Send</button>                     
+		</form>
+
+	</div>
+
+<button id="connect" type="button" class="button large">Start</button>
+
+</body>
+
+<script src="https://unpkg.com/@reactivex/rxjs@5.0.0-beta.1/dist/global/Rx.umd.js"></script>
+<script src="http://unpkg.com/botframework-directlinejs/directLine.js"/></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
+<script src="./scripts/rxjs.js"></script>
+<script>
+
+var directLine;
+var bot = new Object();
+	bot.userId='user';
+	botname='name';
+	bot.email='none@none.com';
+	bot.organisation='organisation';
+	bot.site='site';
+	bot.id='<bot id>';
+	bot.secret='<bot secret>';
+
+var UI = new Object();
+	UI.connect = 'connect';
+	UI.userinputId = 'user-msg';
+	UI.submitbuttonId = 'send';
+	
+	UI.conversationId = 'conversation-text-body';
+	UI.conversationContainerId = 'conversation-text-body';
+	
+$(function(){
+	$(document).on("click", ".actionable", function(){
+		var obj = $(this);
+		switch(obj.attr('data-type'))
+		{
+			case "openUrl":
+				window.open(obj.attr('data-value'), '_blank');
+				break;
+			default:
+				$('#' + UI.userinputId).val(obj.attr('data-value'));
+				$('#' + UI.submitbuttonId).click();
+				break;
+		}
+	});
+});	
+	
+</script>
+
+</html>
