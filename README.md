@@ -6,10 +6,11 @@ fenton provides an accessible UI which has been tested against WCAG 2.0 AA. The 
 
 Built by following the principles in our [how to make chatbots accessible information card](https://canaxess.com.au/InfoCard/chatbots)
 ## Features
-1. Each message in the conversation is accessible from the keyboard using `tabindex`
+1. Each message in the conversation history is accessible from the keyboard
 2. A non-visual indication of which part of the conversation has been spoken by using the `aria-label` attribute
-3. Accessibility markup for several predefined rich media card types including Hero cards
-4. Markdown support
+3. Covnersation contained within an aria live region
+4. Accessibility markup for several predefined rich media card types including Hero cards
+5. Markdown support
 ## How to create and use fenton
 ### Obtain security credentials for your bot:
 1. Make sure you've [registered your bot](https://dev.botframework.com/bots/new)
