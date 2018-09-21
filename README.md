@@ -1,3 +1,6 @@
+
+[![](https://img.shields.io/badge/fenton-BETA-%23fb9b27.svg)](#)
+
 # fenton
 fenton provides an accessible UI which has been tested against WCAG 2.0 AA. The script is for bots developed on the Microsoft Bot Framework, the code uses the Directline channel API to communicate with the bot.
 
@@ -13,7 +16,7 @@ Built by following the principles in our [how to make chatbots accessible inform
 2. Add a DirectLine channel, and generate a Direct Line Secret. Make sure Direct Line 3.0 is enabled
 3. Add the Directline secret into the `bot.secret` property
 ### Enter your details in the bot object
-```
+```js
 var bot = new Object();
 	bot.userId='<userid>';
 	botname='<name>';
@@ -25,7 +28,7 @@ var bot = new Object();
 ```
 ### Add the HTML
 Enter the HTML exactly as it is displayed
-```
+```html
 <div id="chatbot">
 <div id="description" class="sr-hidden">This is the chatbot conversation window, 
 all conversations are shown in here</div>
@@ -52,7 +55,7 @@ all conversations are shown in here</div>
 ```
 ### JQuery usage
 JQuery is used to add click events to Hero cards. All buttons with a class `.actionable` may have a `data-type`, if this has openUrl it will open the page URL in a separate window, else it'll be a response which will carry on the conversation.
-```
+```js
 $(function(){
 	$(document).on("click", ".actionable", function(){
 		var obj = $(this);
