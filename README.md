@@ -8,7 +8,7 @@ Built by following the principles in our [how to make chatbots accessible inform
 ## Features
 1. Each message in the conversation history is accessible from the keyboard
 2. A non-visual indication of which part of the conversation has been spoken by using the `aria-label` attribute
-3. Covnersation contained within an aria live region
+3. Conversation contained within an aria live region
 4. Accessibility markup for several predefined rich media card types including Hero cards
 5. Markdown support
 ## How to create and use fenton
