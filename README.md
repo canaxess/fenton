@@ -1,6 +1,4 @@
 
-[![](https://img.shields.io/badge/fenton-BETA-%23fb9b27.svg)](#)
-
 # fenton
 fenton provides an accessible UI which has been tested against WCAG 2.0 AA. The script is for bots developed on the Microsoft Bot Framework, the code uses the Directline channel API to communicate with the bot.
 
