@@ -34,8 +34,8 @@ all conversations are shown in here</div>
 
 <div id="text-container">
 
-<div id="conversation-text-body" aria-labelledby="description" aria-live="polite">
-	<div tabindex="0" aria-label="The bot said" class="conversation-text bot">Hello, how are you?</div>
+<div id="conversation-text-body" tabindex="0" aria-labelledby="description" aria-live="polite">
+	<div class="conversation-text bot"><span class="sr-hidden">The bot said</span> Hello, how are you?</div>
 </div>
 </div>
 </div>
