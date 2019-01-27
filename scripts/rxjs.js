@@ -21,7 +21,7 @@ click$
 	
 function buildUserMsg(msg)
 {
-	var HTML = '<div tabindex="0" class="conversation-text user"><span class="sr-hidden">You said </span>' + msg + '</div>';
+	var HTML = '<div class="conversation-text user"><span class="sr-hidden">You said </span>' + msg + '</div>';
 	
 	renderResponse(HTML);
 	renderTyping(1);
@@ -30,7 +30,7 @@ function buildUserMsg(msg)
 function buildBotMessage(msg)
 {
 	var converter = new showdown.Converter(), text = msg, html = converter.makeHtml(text);
-	var output = '<div tabindex="0" class="conversation-text bot"><span class="sr-hidden">The bot said </span>' + html + '</div>';
+	var output = '<div class="conversation-text bot"><span class="sr-hidden">The bot said </span>' + html + '</div>';
 	
 	renderTyping(0);
 	renderResponse(output);
@@ -94,7 +94,7 @@ function buildHerocard(response)
 	buildString = buildString + "</div>";
 	
 	renderTyping(0);
-	var output = '<div tabindex="0" class="conversation-text bot"><span class="sr-hidden">The bot said </span>' + buildString + '</div>';
+	var output = '<div class="conversation-text bot"><span class="sr-hidden">The bot said </span>' + buildString + '</div>';
 	renderResponse(output);
 }
 
