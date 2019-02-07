@@ -76,7 +76,7 @@ The support offered between browsers and assistive technology is increasing and 
 ## Mandatory dependencies
 - [RxJS 5.0](https://github.com/ReactiveX/rxjs)
 - [Directline.js](https://github.com/Microsoft/BotFramework-DirectLineJS)
-- [Showdown 1.8.6](http://showdownjs.com/)
+- [Showdown 1.8.6](http://showdownjs.com/) used for displaying markdown
 ## Optional dependencies
 - [JQuery 3.3.1](https://jquery.com/download/) used for quick event handling on rich media cards
 - [Foundation 6.4.3](https://foundation.zurb.com/sites/download.html/) used for basic styling of this example
