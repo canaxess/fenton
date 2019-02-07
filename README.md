@@ -73,10 +73,11 @@ $(function(){
 The support offered between browsers and assistive technology is increasing and has been tested and passed against the following combinations.
 - JAWS 16 and Internet Explorer 11
 - NVDA 2018.2.1 and Google Chrome
-## External dependencies
+## Mandatory dependencies
 - [RxJS 5.0](https://github.com/ReactiveX/rxjs)
 - [Directline.js](https://github.com/Microsoft/BotFramework-DirectLineJS)
-- [JQuery 3.3.1](https://jquery.com/download/)
 - [Showdown 1.8.6](http://showdownjs.com/)
-- [Foundation 6.4.3](https://foundation.zurb.com/sites/download.html/) is only used for basic styling of this example
+## Optional dependencies
+- [JQuery 3.3.1](https://jquery.com/download/) used for quick event handling on rich media cards
+- [Foundation 6.4.3](https://foundation.zurb.com/sites/download.html/) used for basic styling of this example
 > This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
