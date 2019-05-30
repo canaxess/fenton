@@ -1,3 +1,5 @@
+var now = new Date();
+
 var ConnectionStatus = {
   Uninitialized: 1,
   Connecting: 2,
@@ -21,7 +23,7 @@ click$
 	
 function buildUserMsg(msg)
 {
-	var HTML = '<section class="conversation-text user" aria-label="You said <time>">>' + msg + '</section>';
+	var HTML = '<section class="conversation-text user" aria-label="You said ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + '">' + msg + '</section>';
 	
 	renderResponse(HTML);
 	renderTyping(1);
@@ -30,7 +32,7 @@ function buildUserMsg(msg)
 function buildBotMessage(msg)
 {
 	var converter = new showdown.Converter(), text = msg, html = converter.makeHtml(text);
-	var output = '<section class="conversation-text bot" aria-label="The bot said <time>">' + html + '</section>';
+	var output = '<section class="conversation-text bot" aria-label="The bot said ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + '">' + html + '</section>';
 	
 	renderTyping(0);
 	renderResponse(output);
@@ -142,7 +144,7 @@ function botConnect()
 		pollingInterval: 1000,
 	});
 	
-	renderTyping(1);
+	//renderTyping(1);
 	
 	directLine.activity$
 	.filter(activity => activity.from.id === bot.id)
