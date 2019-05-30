@@ -96,7 +96,7 @@ function buildHerocard(response)
 	buildString = buildString + "</div>";
 	
 	renderTyping(0);
-	var output = '<section class="conversation-text bot" aria-label="The bot said <time>">' + buildString + '</section>';
+	var output = '<section class="conversation-text bot" aria-label="The bot said ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + '">' + buildString + '</section>';
 	renderResponse(output);
 }
 
