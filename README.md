@@ -14,6 +14,7 @@ fenton is an accessible UI which has been tested against WCAG 2.0 AA. The script
 1. Make sure you've [registered your bot](https://dev.botframework.com/bots/new)
 2. Add a DirectLine channel, and generate a Direct Line Secret. Make sure Direct Line 3.0 is enabled
 3. Add the Directline secret into the `bot.secret` property
+4. Add the chatbot name to the `bot.id` property
 ### Enter your details in the bot object
 ```js
 var bot = new Object();
