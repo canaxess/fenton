@@ -2,7 +2,10 @@
 # fenton
 fenton is an accessible UI which has been tested against WCAG 2.0 AA. The script is for bots developed on the Microsoft Bot Framework, the code uses the Directline channel API to communicate with the bot.
 
-**Built by following the principles in our [how to make chatbots accessible information card](https://canaxess.com.au/InfoCard/chatbots)**
+**Built by following the principles in our [CHATBOT Accessibility Fundamentals YouTube series](https://www.youtube.com/playlist?list=PLknXoWiYr_QynKoP276ZlGV73aM8uWdq_)**
+
+* [CHATBOT Accessibility Fundamentals repository](https://github.com/canaxess/canaxess-teaches/tree/master/chatbot-accessibility-fundamentals)
+
 ## Features
 1. Each message in the conversation history is accessible from the keyboard
 2. A non-visual indication of which part of the conversation has been spoken by using the `aria-label` attribute
